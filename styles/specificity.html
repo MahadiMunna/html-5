@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <!-- Specificity means ranks of tags. !important>inline-css>id>class>elements  -->
+    <style>
+        h1{
+            color: aquamarine;
+            background-color: cyan;
+        }
+        h1{
+            color: cadetblue;
+        }
+        h1{
+            color: blue !important;
+        }
+        .Heading{
+            color: red;
+        }
+        #bgm{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="Heading">This is heading number-1</h1>
+    <h1 class="Heading">This is heading number-2</h1>
+    <h1 id="bgm" class="Heading">This is heading number-3</h1>
+    <h1 id="bgm" class="Heading" style="color: yellow;">This is heading number-4</h1>
+</body>
+</html>
